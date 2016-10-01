@@ -3,6 +3,8 @@
 public class Principal {
 	
 	public static void main(String [] args){
+
+		/* TO DO: Uma interface amigavel para o usuario */
 		PilhaFigura p = new PilhaFigura();
 		p.crie();
 		Object n;
