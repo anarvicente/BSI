@@ -11,13 +11,12 @@ import pylab
 
 def main():
 	G=nx.Graph()
-	filename = 'A_B_biogrid.txt'
-	arq = open(filename, 'r')
+	arq = open('../../Samples/BioGrid/Output/BioGrid.txt', 'r')
 	#------------------------------------------------------------------
 	linha = arq.readline()
 	while linha != '':
 		sep = linha.split('\t')
-		G.add_edge(sep[0],sep[1][:-1])
+		G.add_edge(sep[1],sep[3][:-1])
 		linha = arq.readline()
 	#-------------------------------------------------------------------
 	arq.close()
